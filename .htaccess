@@ -1,0 +1,18 @@
+Options FollowSymLinks
+
+# Rewrite
+RewriteEngine on
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} !^bin/
+RewriteCond %{REQUEST_URI} !.kraft$
+RewriteCond %{DOCUMENT_ROOT}/www%{REQUEST_URI} -f
+RewriteRule ^(.*)$ www/$1 [L]
+
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-f
+RewriteRule .* bin/core/krafter [L]
+
+# CGI 
+Options +ExecCGI
+AddHandler cgi-script .kraftx
+
