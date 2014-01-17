@@ -1,4 +1,5 @@
 # Eclipse
+.settings
 .project
 .metadata
 
@@ -7,3 +8,7 @@
 
 # Locally stored "Eclipse launch configurations"
 *.launch
+
+# Krafter
+bin/www
+src/www

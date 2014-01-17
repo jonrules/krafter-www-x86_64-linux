@@ -2,5 +2,4 @@
 <krafter.resources.Resource>
 	<setHeader>Content-Type: text/plain; charset=utf-8</setHeader>
 	<setPayload>This is a text resource</setPayload>
-	<addResource><krafter.resources.GenericResource /></addResource>
 </krafter.resources.Resource>

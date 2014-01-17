@@ -1,5 +1,8 @@
 Options FollowSymLinks
 
+# Environment variables
+SetEnv LD_LIBRARY_PATH ./bin
+
 # Rewrite
 RewriteEngine on
 RewriteBase /
@@ -10,7 +13,7 @@ RewriteCond %{DOCUMENT_ROOT}/www%{REQUEST_URI} -f
 RewriteRule ^(.*)$ www/$1 [L]
 
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-f
-RewriteRule .* bin/krafter/krafter [L]
+RewriteRule .* bin/krafter [L]
 
 # CGI 
 Options +ExecCGI
