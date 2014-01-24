@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<examples.ExampleResource>
+	<setHeader>
+		<krafter.String>Content-Type</krafter.String>
+		<krafter.String>text/html</krafter.String>
+	</setHeader>
+	<setPayload>
+		<![CDATA[<!doctype html>
+			<html lang="en">
+			<head>
+				<meta charset="utf-8">
+				<title>Krafter</title>
+				<meta name="description" content="Krafter Site">
+			</head>
+			<body>
+				<h1>Welcome to Krafter!</h1>
+				<p>Check out the example files to get you started:</p>
+				<ul>
+					<li><a href="/example-resource">Example Resource</a> 
+						(/www/example-resource.kraft)</li>
+				</ul>
+			</body>
+			</html>
+		]]>
+	</setPayload>
+</examples.ExampleResource>

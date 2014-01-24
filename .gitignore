@@ -10,5 +10,6 @@
 *.launch
 
 # Krafter
+bin/libkrafter-site.so
 bin/www
 src/www

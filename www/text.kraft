@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<krafter.resources.Resource>
-	<setHeader>Content-Type: text/plain; charset=utf-8</setHeader>
-	<setPayload>This is a text resource</setPayload>
-</krafter.resources.Resource>

@@ -1,16 +1,21 @@
 Options FollowSymLinks
 
 # Environment variables
-SetEnv LD_LIBRARY_PATH ./bin
+SetEnv LD_LIBRARY_PATH /full/path/to/krafter-www/bin
 
 # Rewrite
 RewriteEngine on
 RewriteBase /
 
+RewriteRule ^$ index [R,L]
+
 RewriteCond %{REQUEST_URI} !^bin/
 RewriteCond %{REQUEST_URI} !.kraft$
 RewriteCond %{DOCUMENT_ROOT}/www%{REQUEST_URI} -f
 RewriteRule ^(.*)$ www/$1 [L]
+
+RewriteCond %{DOCUMENT_ROOT}/bin/www%{REQUEST_URI} -f
+RewriteRule .* bin/www%{REQUEST_URI} [L]
 
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-f
 RewriteRule .* bin/krafter [L]

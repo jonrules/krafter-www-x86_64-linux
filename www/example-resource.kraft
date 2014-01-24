@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<examples.ExampleResource>
+	<setHeader>
+		<krafter.String>Content-Type</krafter.String>
+		<krafter.String>text/plain; charset=utf-8</krafter.String>
+	</setHeader>
+	<setPayload>This is an example resource.</setPayload>
+	<addResource>
+		<krafter.resources.Resource>
+			<setHeader>
+				<krafter.String>Content-Type</krafter.String>
+				<krafter.String>text/plain; charset=utf-8</krafter.String>
+			</setHeader>
+			<setPayload>This is an embedded resource</setPayload>
+		</krafter.resources.Resource>
+	</addResource>
+</examples.ExampleResource>
